@@ -7,7 +7,9 @@
 //
 
 #import "LYTabBarViewController.h"
-
+#import "LYNavigationController.h"
+#import "LYTopicViewController.h"
+#import "LYNavigationController.h"
 @interface LYTabBarViewController ()
 
 @end
@@ -16,8 +18,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    LYTopicViewController *top1 = [[LYTopicViewController alloc] init];
+    LYNavigationController *nav1 = [[LYNavigationController alloc] initWithRootViewController:top1];
+    top1.view.backgroundColor = [UIColor redColor];
+    top1.title = @"精华";
+    LYTopicViewController *top2 = [[LYTopicViewController alloc] init];
+    LYNavigationController *nav2 = [[LYNavigationController alloc] initWithRootViewController:top2];
+    top2.view.backgroundColor = [UIColor yellowColor];
+    top2.title = @"新帖";
+    LYTopicViewController *top3 = [[LYTopicViewController alloc] init];
+    LYNavigationController *nav3 = [[LYNavigationController alloc] initWithRootViewController:top3];
+    top3.view.backgroundColor = [UIColor blueColor];
+    top3.title = @"关注";
+    LYTopicViewController *top4 = [[LYTopicViewController alloc] init];
+    LYNavigationController *nav4 = [[LYNavigationController alloc] initWithRootViewController:top4];
+    top4.view.backgroundColor = [UIColor greenColor];
+    top4.title = @"我";
+    
     self.view.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
-    // Do any additional setup after loading the view.
+    [self addChildViewController:nav1];
+    [self addChildViewController:nav2];
+    [self addChildViewController:nav3];
+    [self addChildViewController:nav4];
 }
 
 /*
