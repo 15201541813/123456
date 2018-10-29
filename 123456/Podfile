@@ -1,0 +1,15 @@
+ platform :ios, '8.0'
+ target "123456" do
+ pod 'AFNetworking'
+ pod "SDWebImage"
+ pod "SVProgressHUD"
+ pod "MJExtension"
+ pod "Masonry"
+ pod "MJRefresh"
+ pod "pop"
+ pod "DACircularProgress"
+ pod 'NJKWebViewProgress'
+ pod 'MBProgressHUD'
+ pod 'FLAnimatedImage'
+ end
+
