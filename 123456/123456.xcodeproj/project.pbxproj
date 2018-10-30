@@ -11,15 +11,16 @@
 		BA235877218706B30048503D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA235876218706B30048503D /* AppDelegate.m */; };
 		BA23587F218706B40048503D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA23587E218706B40048503D /* Assets.xcassets */; };
 		BA235885218706B40048503D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA235884218706B40048503D /* main.m */; };
-		BA23588D218707030048503D /* LYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23588C218707030048503D /* LYTabBarViewController.m */; };
-		BA23589021870C650048503D /* LYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23588F21870C650048503D /* LYNavigationController.m */; };
-		BA23589321870DBE0048503D /* LYTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23589221870DBE0048503D /* LYTopicViewController.m */; };
 		BA23589621883FCF0048503D /* UIImage+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23589521883FCF0048503D /* UIImage+extension.m */; };
-		BA235899218846330048503D /* LYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA235898218846330048503D /* LYEssenceViewController.m */; };
-		BA23589C218846540048503D /* LYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23589B218846540048503D /* LYFriendTrendsViewController.m */; };
-		BA23589F218846720048503D /* LYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23589E218846720048503D /* LYMeViewController.m */; };
-		BA2358A2218846860048503D /* LYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358A1218846860048503D /* LYNewViewController.m */; };
-		BA2358A5218846970048503D /* LYPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358A4218846970048503D /* LYPushViewController.m */; };
+		BA2358D1218849E50048503D /* LYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358A9218849E50048503D /* LYEssenceViewController.m */; };
+		BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358B0218849E50048503D /* LYFriendTrendsViewController.m */; };
+		BA2358D3218849E50048503D /* LYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358B9218849E50048503D /* LYNewViewController.m */; };
+		BA2358D4218849E50048503D /* LYPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358BF218849E50048503D /* LYPushViewController.m */; };
+		BA2358D5218849E50048503D /* LYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358C5218849E50048503D /* LYNavigationController.m */; };
+		BA2358D6218849E50048503D /* LYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358C6218849E50048503D /* LYTabBarViewController.m */; };
+		BA2358D7218849E50048503D /* LYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358CD218849E50048503D /* LYMeViewController.m */; };
+		BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358D921884CB80048503D /* UIBarButtonItem+extension.m */; };
+		BA2358DD21885F7A0048503D /* LYTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358DC21885F7A0048503D /* LYTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,24 +32,26 @@
 		BA23587E218706B40048503D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA235883218706B40048503D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA235884218706B40048503D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BA23588B218707030048503D /* LYTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabBarViewController.h; sourceTree = "<group>"; };
-		BA23588C218707030048503D /* LYTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTabBarViewController.m; sourceTree = "<group>"; };
-		BA23588E21870C650048503D /* LYNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNavigationController.h; sourceTree = "<group>"; };
-		BA23588F21870C650048503D /* LYNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNavigationController.m; sourceTree = "<group>"; };
-		BA23589121870DBE0048503D /* LYTopicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTopicViewController.h; sourceTree = "<group>"; };
-		BA23589221870DBE0048503D /* LYTopicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTopicViewController.m; sourceTree = "<group>"; };
 		BA23589421883FCF0048503D /* UIImage+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+extension.h"; sourceTree = "<group>"; };
 		BA23589521883FCF0048503D /* UIImage+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+extension.m"; sourceTree = "<group>"; };
-		BA235897218846330048503D /* LYEssenceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceViewController.h; sourceTree = "<group>"; };
-		BA235898218846330048503D /* LYEssenceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceViewController.m; sourceTree = "<group>"; };
-		BA23589A218846540048503D /* LYFriendTrendsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFriendTrendsViewController.h; sourceTree = "<group>"; };
-		BA23589B218846540048503D /* LYFriendTrendsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFriendTrendsViewController.m; sourceTree = "<group>"; };
-		BA23589D218846720048503D /* LYMeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYMeViewController.h; sourceTree = "<group>"; };
-		BA23589E218846720048503D /* LYMeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYMeViewController.m; sourceTree = "<group>"; };
-		BA2358A0218846860048503D /* LYNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNewViewController.h; sourceTree = "<group>"; };
-		BA2358A1218846860048503D /* LYNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNewViewController.m; sourceTree = "<group>"; };
-		BA2358A3218846960048503D /* LYPushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPushViewController.h; sourceTree = "<group>"; };
-		BA2358A4218846970048503D /* LYPushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPushViewController.m; sourceTree = "<group>"; };
+		BA2358A9218849E50048503D /* LYEssenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYEssenceViewController.m; sourceTree = "<group>"; };
+		BA2358AA218849E50048503D /* LYEssenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYEssenceViewController.h; sourceTree = "<group>"; };
+		BA2358AF218849E50048503D /* LYFriendTrendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYFriendTrendsViewController.h; sourceTree = "<group>"; };
+		BA2358B0218849E50048503D /* LYFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFriendTrendsViewController.m; sourceTree = "<group>"; };
+		BA2358B9218849E50048503D /* LYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNewViewController.m; sourceTree = "<group>"; };
+		BA2358BA218849E50048503D /* LYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYNewViewController.h; sourceTree = "<group>"; };
+		BA2358BF218849E50048503D /* LYPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPushViewController.m; sourceTree = "<group>"; };
+		BA2358C0218849E50048503D /* LYPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPushViewController.h; sourceTree = "<group>"; };
+		BA2358C5218849E50048503D /* LYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNavigationController.m; sourceTree = "<group>"; };
+		BA2358C6218849E50048503D /* LYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTabBarViewController.m; sourceTree = "<group>"; };
+		BA2358C7218849E50048503D /* LYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYNavigationController.h; sourceTree = "<group>"; };
+		BA2358C8218849E50048503D /* LYTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYTabBarViewController.h; sourceTree = "<group>"; };
+		BA2358CD218849E50048503D /* LYMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYMeViewController.m; sourceTree = "<group>"; };
+		BA2358CE218849E50048503D /* LYMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYMeViewController.h; sourceTree = "<group>"; };
+		BA2358D821884CB80048503D /* UIBarButtonItem+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+extension.h"; sourceTree = "<group>"; };
+		BA2358D921884CB80048503D /* UIBarButtonItem+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+extension.m"; sourceTree = "<group>"; };
+		BA2358DB21885F7A0048503D /* LYTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYTabBar.h; sourceTree = "<group>"; };
+		BA2358DC21885F7A0048503D /* LYTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYTabBar.m; sourceTree = "<group>"; };
 		C409E0E730E9B5895FD010B1 /* libPods-123456.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-123456.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -102,31 +105,265 @@
 		BA235874218706B30048503D /* 123456 */ = {
 			isa = PBXGroup;
 			children = (
-				BA235875218706B30048503D /* AppDelegate.h */,
-				BA235876218706B30048503D /* AppDelegate.m */,
+				BA2358A6218849E50048503D /* Class */,
 				BA23587E218706B40048503D /* Assets.xcassets */,
 				BA235883218706B40048503D /* Info.plist */,
 				BA235884218706B40048503D /* main.m */,
-				BA23588B218707030048503D /* LYTabBarViewController.h */,
-				BA23588C218707030048503D /* LYTabBarViewController.m */,
-				BA23588E21870C650048503D /* LYNavigationController.h */,
-				BA23588F21870C650048503D /* LYNavigationController.m */,
-				BA23589121870DBE0048503D /* LYTopicViewController.h */,
-				BA23589221870DBE0048503D /* LYTopicViewController.m */,
-				BA23589421883FCF0048503D /* UIImage+extension.h */,
-				BA23589521883FCF0048503D /* UIImage+extension.m */,
-				BA235897218846330048503D /* LYEssenceViewController.h */,
-				BA235898218846330048503D /* LYEssenceViewController.m */,
-				BA23589A218846540048503D /* LYFriendTrendsViewController.h */,
-				BA23589B218846540048503D /* LYFriendTrendsViewController.m */,
-				BA23589D218846720048503D /* LYMeViewController.h */,
-				BA23589E218846720048503D /* LYMeViewController.m */,
-				BA2358A0218846860048503D /* LYNewViewController.h */,
-				BA2358A1218846860048503D /* LYNewViewController.m */,
-				BA2358A3218846960048503D /* LYPushViewController.h */,
-				BA2358A4218846970048503D /* LYPushViewController.m */,
 			);
 			path = 123456;
+			sourceTree = "<group>";
+		};
+		BA2358A6218849E50048503D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358A7218849E50048503D /* Essence - 精华 */,
+				BA2358AD218849E50048503D /* Frendtrend - 关注 */,
+				BA2358B3218849E50048503D /* Other */,
+				BA2358B7218849E50048503D /* New - 新帖 */,
+				BA2358BD218849E50048503D /* Publish - 发布 */,
+				BA2358C3218849E50048503D /* Main */,
+				BA2358CB218849E50048503D /* Me - 我 */,
+			);
+			path = Class;
+			sourceTree = SOURCE_ROOT;
+		};
+		BA2358A7218849E50048503D /* Essence - 精华 */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358A8218849E50048503D /* controller */,
+				BA2358AB218849E50048503D /* model */,
+				BA2358AC218849E50048503D /* view */,
+			);
+			path = "Essence - 精华";
+			sourceTree = "<group>";
+		};
+		BA2358A8218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358AA218849E50048503D /* LYEssenceViewController.h */,
+				BA2358A9218849E50048503D /* LYEssenceViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358AB218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358AC218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA2358AD218849E50048503D /* Frendtrend - 关注 */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358AE218849E50048503D /* controller */,
+				BA2358B1218849E50048503D /* model */,
+				BA2358B2218849E50048503D /* view */,
+			);
+			path = "Frendtrend - 关注";
+			sourceTree = "<group>";
+		};
+		BA2358AE218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358AF218849E50048503D /* LYFriendTrendsViewController.h */,
+				BA2358B0218849E50048503D /* LYFriendTrendsViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358B1218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358B2218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA2358B3218849E50048503D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358B4218849E50048503D /* controller */,
+				BA2358B5218849E50048503D /* model */,
+				BA2358B6218849E50048503D /* view */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		BA2358B4218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358B5218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358B6218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA23589421883FCF0048503D /* UIImage+extension.h */,
+				BA23589521883FCF0048503D /* UIImage+extension.m */,
+				BA2358D821884CB80048503D /* UIBarButtonItem+extension.h */,
+				BA2358D921884CB80048503D /* UIBarButtonItem+extension.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA2358B7218849E50048503D /* New - 新帖 */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358B8218849E50048503D /* controller */,
+				BA2358BB218849E50048503D /* model */,
+				BA2358BC218849E50048503D /* view */,
+			);
+			path = "New - 新帖";
+			sourceTree = "<group>";
+		};
+		BA2358B8218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358BA218849E50048503D /* LYNewViewController.h */,
+				BA2358B9218849E50048503D /* LYNewViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358BB218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358BC218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA2358BD218849E50048503D /* Publish - 发布 */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358BE218849E50048503D /* controller */,
+				BA2358C1218849E50048503D /* model */,
+				BA2358C2218849E50048503D /* view */,
+			);
+			path = "Publish - 发布";
+			sourceTree = "<group>";
+		};
+		BA2358BE218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358BF218849E50048503D /* LYPushViewController.m */,
+				BA2358C0218849E50048503D /* LYPushViewController.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358C1218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358C2218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA2358C3218849E50048503D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BA235875218706B30048503D /* AppDelegate.h */,
+				BA235876218706B30048503D /* AppDelegate.m */,
+				BA2358C4218849E50048503D /* controller */,
+				BA2358C9218849E50048503D /* model */,
+				BA2358CA218849E50048503D /* view */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BA2358C4218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358C5218849E50048503D /* LYNavigationController.m */,
+				BA2358C6218849E50048503D /* LYTabBarViewController.m */,
+				BA2358C7218849E50048503D /* LYNavigationController.h */,
+				BA2358C8218849E50048503D /* LYTabBarViewController.h */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358C9218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358CA218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358DB21885F7A0048503D /* LYTabBar.h */,
+				BA2358DC21885F7A0048503D /* LYTabBar.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		BA2358CB218849E50048503D /* Me - 我 */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358CC218849E50048503D /* controller */,
+				BA2358CF218849E50048503D /* model */,
+				BA2358D0218849E50048503D /* view */,
+			);
+			path = "Me - 我";
+			sourceTree = "<group>";
+		};
+		BA2358CC218849E50048503D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BA2358CE218849E50048503D /* LYMeViewController.h */,
+				BA2358CD218849E50048503D /* LYMeViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BA2358CF218849E50048503D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		BA2358D0218849E50048503D /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,17 +477,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA23589021870C650048503D /* LYNavigationController.m in Sources */,
+				BA2358D3218849E50048503D /* LYNewViewController.m in Sources */,
 				BA23589621883FCF0048503D /* UIImage+extension.m in Sources */,
-				BA23589321870DBE0048503D /* LYTopicViewController.m in Sources */,
+				BA2358DD21885F7A0048503D /* LYTabBar.m in Sources */,
 				BA235885218706B40048503D /* main.m in Sources */,
 				BA235877218706B30048503D /* AppDelegate.m in Sources */,
-				BA23589C218846540048503D /* LYFriendTrendsViewController.m in Sources */,
-				BA2358A5218846970048503D /* LYPushViewController.m in Sources */,
-				BA2358A2218846860048503D /* LYNewViewController.m in Sources */,
-				BA23588D218707030048503D /* LYTabBarViewController.m in Sources */,
-				BA235899218846330048503D /* LYEssenceViewController.m in Sources */,
-				BA23589F218846720048503D /* LYMeViewController.m in Sources */,
+				BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */,
+				BA2358D4218849E50048503D /* LYPushViewController.m in Sources */,
+				BA2358D5218849E50048503D /* LYNavigationController.m in Sources */,
+				BA2358D6218849E50048503D /* LYTabBarViewController.m in Sources */,
+				BA2358D1218849E50048503D /* LYEssenceViewController.m in Sources */,
+				BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */,
+				BA2358D7218849E50048503D /* LYMeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

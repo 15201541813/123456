@@ -8,8 +8,11 @@
 
 #import "LYTabBarViewController.h"
 #import "LYNavigationController.h"
-#import "LYTopicViewController.h"
+#import "LYEssenceViewController.h"
 #import "UIImage+extension.h"
+#import "LYFriendTrendsViewController.h"
+#import "LYNewViewController.h"
+#import "LYMeViewController.h"
 @interface LYTabBarViewController ()
 
 @end
@@ -19,10 +22,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self setWithController:[[LYTopicViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
-    [self setWithController:[[LYTopicViewController alloc] init] title:@"新帖" image:@"tabBar_essence_icon" selectedImage:@"tabBar_new_click_icon"];
-    [self setWithController:[[LYTopicViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
-    [self setWithController:[[LYTopicViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
+    [self setWithController:[[LYEssenceViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setWithController:[[LYNewViewController alloc] init] title:@"新帖" image:@"tabBar_essence_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setWithController:[[LYFriendTrendsViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setWithController:[[LYMeViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }
 
 - (void)setWithController:(UIViewController *)controller title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
