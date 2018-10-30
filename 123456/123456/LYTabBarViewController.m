@@ -9,7 +9,7 @@
 #import "LYTabBarViewController.h"
 #import "LYNavigationController.h"
 #import "LYTopicViewController.h"
-#import "LYNavigationController.h"
+#import "UIImage+extension.h"
 @interface LYTabBarViewController ()
 
 @end
@@ -18,38 +18,31 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    LYTopicViewController *top1 = [[LYTopicViewController alloc] init];
-    LYNavigationController *nav1 = [[LYNavigationController alloc] initWithRootViewController:top1];
-    top1.view.backgroundColor = [UIColor redColor];
-    top1.title = @"精华";
-    LYTopicViewController *top2 = [[LYTopicViewController alloc] init];
-    LYNavigationController *nav2 = [[LYNavigationController alloc] initWithRootViewController:top2];
-    top2.view.backgroundColor = [UIColor yellowColor];
-    top2.title = @"新帖";
-    LYTopicViewController *top3 = [[LYTopicViewController alloc] init];
-    LYNavigationController *nav3 = [[LYNavigationController alloc] initWithRootViewController:top3];
-    top3.view.backgroundColor = [UIColor blueColor];
-    top3.title = @"关注";
-    LYTopicViewController *top4 = [[LYTopicViewController alloc] init];
-    LYNavigationController *nav4 = [[LYNavigationController alloc] initWithRootViewController:top4];
-    top4.view.backgroundColor = [UIColor greenColor];
-    top4.title = @"我";
     
-    self.view.backgroundColor = [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
-    [self addChildViewController:nav1];
-    [self addChildViewController:nav2];
-    [self addChildViewController:nav3];
-    [self addChildViewController:nav4];
+    [self setWithController:[[LYTopicViewController alloc] init] title:@"精华" image:@"tabBar_essence_icon" selectedImage:@"tabBar_essence_click_icon"];
+    [self setWithController:[[LYTopicViewController alloc] init] title:@"新帖" image:@"tabBar_essence_icon" selectedImage:@"tabBar_new_click_icon"];
+    [self setWithController:[[LYTopicViewController alloc] init] title:@"关注" image:@"tabBar_friendTrends_icon" selectedImage:@"tabBar_friendTrends_click_icon"];
+    [self setWithController:[[LYTopicViewController alloc] init] title:@"我" image:@"tabBar_me_icon" selectedImage:@"tabBar_me_click_icon"];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)setWithController:(UIViewController *)controller title:(NSString *)title image:(NSString *)image selectedImage:(NSString *)selectedImage
+{
+    
+    LYNavigationController *nav = [[LYNavigationController alloc] initWithRootViewController:controller];
+    [self addChildViewController:nav];
+    controller.view.backgroundColor = [UIColor colorWithRed:arc4random()%255 / 255.0 green:arc4random()%255 / 255.0 blue:arc4random()%255 / 255.0 alpha:1];
+    controller.tabBarItem.title = title;
+    NSMutableDictionary *dic = [NSMutableDictionary dictionary];
+    dic[NSForegroundColorAttributeName] = [UIColor grayColor];
+    dic[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    NSMutableDictionary *selectedDic = [NSMutableDictionary dictionary];
+    selectedDic[NSForegroundColorAttributeName] = [UIColor blackColor];
+    selectedDic[NSFontAttributeName] = [UIFont systemFontOfSize:13];
+    [controller.tabBarItem setTitleTextAttributes:dic forState:(UIControlStateNormal)];
+    [controller.tabBarItem setTitleTextAttributes:selectedDic forState:(UIControlStateSelected)];
+    controller.tabBarItem.image = [UIImage imageOriginalRenderingModeWithName:image];
+    controller.tabBarItem.selectedImage = [UIImage imageOriginalRenderingModeWithName:selectedImage];
+    
 }
-*/
 
 @end
