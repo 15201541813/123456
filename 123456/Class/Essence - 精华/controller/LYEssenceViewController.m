@@ -8,6 +8,7 @@
 
 #import "LYEssenceViewController.h"
 #import "UIBarButtonItem+extension.h"
+#import "LYRecommendTagController.h"
 @interface LYEssenceViewController ()
 
 @end
@@ -23,7 +24,8 @@
 
 - (void)buttonClick
 {
-    NSLog(@"djfj");
+    LYRecommendTagController *tag = [[LYRecommendTagController alloc] init];
+    [self.navigationController pushViewController:tag animated:YES];
 }
 
 @end
