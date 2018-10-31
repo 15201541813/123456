@@ -24,6 +24,7 @@
 		BA2358E02189797B0048503D /* LYRecommendTagController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358DF2189797B0048503D /* LYRecommendTagController.m */; };
 		BA2358E321897C910048503D /* LYRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E221897C910048503D /* LYRecommendTag.m */; };
 		BA2358E621897ED70048503D /* LYRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E521897ED70048503D /* LYRecommendTagCell.m */; };
+		BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E72189AE830048503D /* UIView+XMGExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,8 @@
 		BA2358E221897C910048503D /* LYRecommendTag.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommendTag.m; sourceTree = "<group>"; };
 		BA2358E421897ED70048503D /* LYRecommendTagCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecommendTagCell.h; sourceTree = "<group>"; };
 		BA2358E521897ED70048503D /* LYRecommendTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommendTagCell.m; sourceTree = "<group>"; };
+		BA2358E72189AE830048503D /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
+		BA2358E82189AE830048503D /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
 		C409E0E730E9B5895FD010B1 /* libPods-123456.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-123456.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -235,6 +238,8 @@
 		BA2358B6218849E50048503D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BA2358E82189AE830048503D /* UIView+XMGExtension.h */,
+				BA2358E72189AE830048503D /* UIView+XMGExtension.m */,
 				BA23589421883FCF0048503D /* UIImage+extension.h */,
 				BA23589521883FCF0048503D /* UIImage+extension.m */,
 				BA2358D821884CB80048503D /* UIBarButtonItem+extension.h */,
@@ -324,10 +329,10 @@
 		BA2358C4218849E50048503D /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA2358C5218849E50048503D /* LYNavigationController.m */,
-				BA2358C6218849E50048503D /* LYTabBarViewController.m */,
 				BA2358C7218849E50048503D /* LYNavigationController.h */,
+				BA2358C5218849E50048503D /* LYNavigationController.m */,
 				BA2358C8218849E50048503D /* LYTabBarViewController.h */,
+				BA2358C6218849E50048503D /* LYTabBarViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -505,6 +510,7 @@
 				BA2358E621897ED70048503D /* LYRecommendTagCell.m in Sources */,
 				BA2358D6218849E50048503D /* LYTabBarViewController.m in Sources */,
 				BA2358D1218849E50048503D /* LYEssenceViewController.m in Sources */,
+				BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */,
 				BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */,
 				BA2358D7218849E50048503D /* LYMeViewController.m in Sources */,
 			);

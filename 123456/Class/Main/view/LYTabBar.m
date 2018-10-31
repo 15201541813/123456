@@ -7,24 +7,20 @@
 //
 
 #import "LYTabBar.h"
+#import "UIView+XMGExtension.h"
 @interface LYTabBar()
 @property (nonatomic, weak) UIButton *publishButton;
-@property (nonatomic, strong) NSMutableArray *buttonItems;
+
 @end
 @implementation LYTabBar
 - (instancetype)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
+        self.backgroundImage = [UIImage imageNamed:@"tabbar-light"];
     }
     return self;
 }
-- (NSMutableArray *)buttonItems
-{
-    if (_buttonItems == nil) {
-        _buttonItems = [NSMutableArray array];
-    }
-    return _buttonItems;
-}
+
 
 - (UIButton *)publishButton
 {
@@ -55,7 +51,7 @@
         }
         index = index + 1;
     }
-    
+    NSLog(@"%f",self.height);
     
     
     
