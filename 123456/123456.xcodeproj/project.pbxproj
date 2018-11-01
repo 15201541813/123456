@@ -25,6 +25,8 @@
 		BA2358E321897C910048503D /* LYRecommendTag.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E221897C910048503D /* LYRecommendTag.m */; };
 		BA2358E621897ED70048503D /* LYRecommendTagCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E521897ED70048503D /* LYRecommendTagCell.m */; };
 		BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E72189AE830048503D /* UIView+XMGExtension.m */; };
+		BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */; };
+		BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,11 @@
 		BA2358E521897ED70048503D /* LYRecommendTagCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommendTagCell.m; sourceTree = "<group>"; };
 		BA2358E72189AE830048503D /* UIView+XMGExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XMGExtension.m"; sourceTree = "<group>"; };
 		BA2358E82189AE830048503D /* UIView+XMGExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XMGExtension.h"; sourceTree = "<group>"; };
+		BA2358EA218ACF3B0048503D /* LYRecommenFollowViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecommenFollowViewController.h; sourceTree = "<group>"; };
+		BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommenFollowViewController.m; sourceTree = "<group>"; };
+		BAFA5A24218AD6190029F58F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecmmendFollowCatCell.h; sourceTree = "<group>"; };
+		BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecmmendFollowCatCell.m; sourceTree = "<group>"; };
 		C409E0E730E9B5895FD010B1 /* libPods-123456.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-123456.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,6 +200,8 @@
 			children = (
 				BA2358AF218849E50048503D /* LYFriendTrendsViewController.h */,
 				BA2358B0218849E50048503D /* LYFriendTrendsViewController.m */,
+				BA2358EA218ACF3B0048503D /* LYRecommenFollowViewController.h */,
+				BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -207,6 +216,8 @@
 		BA2358B2218849E50048503D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */,
+				BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -217,6 +228,7 @@
 				BA2358B4218849E50048503D /* controller */,
 				BA2358B5218849E50048503D /* model */,
 				BA2358B6218849E50048503D /* view */,
+				BAFA5A24218AD6190029F58F /* PrefixHeader.pch */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -500,10 +512,12 @@
 				BA2358E321897C910048503D /* LYRecommendTag.m in Sources */,
 				BA2358D3218849E50048503D /* LYNewViewController.m in Sources */,
 				BA23589621883FCF0048503D /* UIImage+extension.m in Sources */,
+				BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */,
 				BA2358DD21885F7A0048503D /* LYTabBar.m in Sources */,
 				BA235885218706B40048503D /* main.m in Sources */,
 				BA235877218706B30048503D /* AppDelegate.m in Sources */,
 				BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */,
+				BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */,
 				BA2358D4218849E50048503D /* LYPushViewController.m in Sources */,
 				BA2358E02189797B0048503D /* LYRecommendTagController.m in Sources */,
 				BA2358D5218849E50048503D /* LYNavigationController.m in Sources */,
@@ -637,6 +651,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/liyan/Desktop/123456/123456/Class/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = 123456/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -654,6 +670,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/liyan/Desktop/123456/123456/Class/Other/PrefixHeader.pch;
 				INFOPLIST_FILE = 123456/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

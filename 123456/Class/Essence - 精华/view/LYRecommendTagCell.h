@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYRecommendTagCell : UITableViewCell
-@property (nonatomic, assign)CGFloat cellHeight;
 @property (nonatomic, strong) LYRecommendTag *recTag;
 + (instancetype)cellWithTableView:(UITableView *)tableView;
 @end

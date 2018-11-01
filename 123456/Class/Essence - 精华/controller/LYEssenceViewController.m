@@ -17,11 +17,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //界面基本设置
+    [self basicSetting];
+}
+#pragma mark - basicSetting界面基本设置
+- (void)basicSetting
+{
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"MainTitle"]];
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"MainTagSubIcon" highImage:@"MainTagSubIconClick" target:self action:@selector(buttonClick)];
-
 }
-
+#pragma mark - buttonClick
 - (void)buttonClick
 {
     LYRecommendTagController *tag = [[LYRecommendTagController alloc] init];

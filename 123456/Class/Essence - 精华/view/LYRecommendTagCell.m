@@ -17,17 +17,15 @@ static CGFloat LYRecommendTagSubscribeBtnW = 51;
 static CGFloat LYRecommendTagSubscribeBtnH = 25;
 @interface LYRecommendTagCell()
 /**推荐标签的图片*/
-@property (nonatomic, weak) UIImageView *iconImageView;
+@property (nonatomic, strong) UIImageView *iconImageView;
 /**标签名称*/
-@property (nonatomic, weak) UILabel *nameLabel;
+@property (nonatomic, strong) UILabel *nameLabel;
 /**标签的订阅量*/
 @property (nonatomic, weak) UILabel *subNemberLabel;
 /**订阅*/
 @property (nonatomic, weak) UIButton *subscribeBtn;
 @end
 @implementation LYRecommendTagCell
-
-
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -45,22 +43,35 @@ static CGFloat LYRecommendTagSubscribeBtnH = 25;
     }
     return cell;
 }
-
+#define mark - setRecTag:(LYRecommendTag *)recTag
 - (void)setRecTag:(LYRecommendTag *)recTag
 {
     _recTag = recTag;
     NSURL *url = [NSURL URLWithString:recTag.image_list];
     [self.iconImageView sd_setImageWithURL:url];
     self.nameLabel.text = recTag.theme_name;
-    self.subNemberLabel.text = recTag.sub_number;
+    self.subNemberLabel.text = [self stringWithText:recTag.sub_number];
+    NSInteger height = LYRecommendTagParding * 2 + LYRecommendTagIconSize;
+    recTag.rowHeight = [NSString stringWithFormat:@"%ld",(long)height];
+}
+#pragma mark - stringWithText:
+- (NSString *)stringWithText:(NSString *)text
+{
+    NSString *str = nil;
+    NSInteger nub = [text integerValue];
+    if (nub > 10000) {
+        str = [NSString stringWithFormat:@"%.1f万人订阅",nub / 10000.0];
+    }else {
+        str = [NSString stringWithFormat:@"%ld人订阅", (long)nub];
+    }
+    return str;
 }
 #define mark - 控件懒加载
 -(UIImageView *)iconImageView
 {
     if (_iconImageView == nil) {
-        UIImageView *iconImageView = [[UIImageView alloc] init];
-        [self.contentView addSubview:iconImageView];
-        _iconImageView = iconImageView;
+        _iconImageView = [[UIImageView alloc] init];
+        [self.contentView addSubview:_iconImageView];
         _iconImageView.image = [UIImage imageNamed:@"defaultUserIcon"];
     }
     return _iconImageView;
@@ -69,15 +80,12 @@ static CGFloat LYRecommendTagSubscribeBtnH = 25;
 - (UILabel *)nameLabel
 {
     if (_nameLabel == nil) {
-        UILabel *nameLabel = [[UILabel alloc] init];
-        nameLabel.textColor = [UIColor blackColor];
-        nameLabel.font = [UIFont systemFontOfSize:14];
-        nameLabel.numberOfLines = 0;
-        [self.contentView addSubview:nameLabel];
-        _nameLabel = nameLabel;
+        _nameLabel = [[UILabel alloc] init];
+        _nameLabel.textColor = [UIColor blackColor];
+        _nameLabel.font = [UIFont systemFontOfSize:14];
+        _nameLabel.numberOfLines = 0;
+        [self.contentView addSubview:_nameLabel];
         [_nameLabel sizeToFit];
-        _nameLabel.text = @"jasdfkjdf";
-        _nameLabel.backgroundColor = [UIColor yellowColor];
     }
     return _nameLabel;
 }
@@ -91,8 +99,6 @@ static CGFloat LYRecommendTagSubscribeBtnH = 25;
         label.font = [UIFont systemFontOfSize:12];
         label.textColor = [UIColor lightGrayColor];
         [_subNemberLabel sizeToFit];
-        _subNemberLabel.backgroundColor = [UIColor redColor];
-        _subNemberLabel.text = @"akjfj";
     }
     return _subNemberLabel;
 }
@@ -139,6 +145,6 @@ static CGFloat LYRecommendTagSubscribeBtnH = 25;
         make.width.mas_equalTo(LYRecommendTagSubscribeBtnW);
         make.height.mas_equalTo(LYRecommendTagSubscribeBtnH);
     }];
-    self.cellHeight = LYRecommendTagParding * 2 + LYRecommendTagIconSize;
+   
 }
 @end

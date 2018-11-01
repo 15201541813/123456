@@ -47,11 +47,11 @@
         if (![view isKindOfClass:[UIControl class]] || view == self.publishButton) continue;
         view.frame = CGRectMake(index * itemWidth, 1, itemWidth, height);
         if (index >= 2) {
-            view.frame = CGRectMake((index + 1) * itemWidth, 1, itemWidth, height);
+            view.frame = CGRectMake((index + 1) * itemWidth, 0, itemWidth, height);
         }
         index = index + 1;
     }
-    NSLog(@"%f",self.height);
+   
     
     
     

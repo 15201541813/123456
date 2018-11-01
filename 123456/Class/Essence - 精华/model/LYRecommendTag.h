@@ -7,16 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
-NS_ASSUME_NONNULL_BEGIN
-
 @interface LYRecommendTag : NSObject
 /**标签名称*/
-@property (nonatomic, weak) NSString *theme_name;
+@property (nonatomic, strong) NSString *theme_name;
 /**此标签的订阅量*/
-@property (nonatomic, weak) NSString *sub_number;
+@property (nonatomic, strong) NSString *sub_number;
 /**推荐标签的图片url地址*/
-@property (nonatomic, weak) NSString *image_list;
+@property (nonatomic, strong) NSString *image_list;
+/**cell高度*/
+@property (nonatomic, strong) NSString *rowHeight;
 @end
 
-NS_ASSUME_NONNULL_END
+
