@@ -27,6 +27,8 @@
 		BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E72189AE830048503D /* UIView+XMGExtension.m */; };
 		BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */; };
 		BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */; };
+		BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */; };
+		BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,10 @@
 		BAFA5A24218AD6190029F58F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecmmendFollowCatCell.h; sourceTree = "<group>"; };
 		BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecmmendFollowCatCell.m; sourceTree = "<group>"; };
+		BAFA5A28218C38F60029F58F /* LYRecommendFollowCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecommendFollowCategory.h; sourceTree = "<group>"; };
+		BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommendFollowCategory.m; sourceTree = "<group>"; };
+		BAFA5A2B218C4FBE0029F58F /* LYRecommendFollowUsers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecommendFollowUsers.h; sourceTree = "<group>"; };
+		BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommendFollowUsers.m; sourceTree = "<group>"; };
 		C409E0E730E9B5895FD010B1 /* libPods-123456.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-123456.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -209,6 +215,10 @@
 		BA2358B1218849E50048503D /* model */ = {
 			isa = PBXGroup;
 			children = (
+				BAFA5A28218C38F60029F58F /* LYRecommendFollowCategory.h */,
+				BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */,
+				BAFA5A2B218C4FBE0029F58F /* LYRecommendFollowUsers.h */,
+				BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -517,6 +527,7 @@
 				BA235885218706B40048503D /* main.m in Sources */,
 				BA235877218706B30048503D /* AppDelegate.m in Sources */,
 				BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */,
+				BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */,
 				BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */,
 				BA2358D4218849E50048503D /* LYPushViewController.m in Sources */,
 				BA2358E02189797B0048503D /* LYRecommendTagController.m in Sources */,
@@ -527,6 +538,7 @@
 				BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */,
 				BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */,
 				BA2358D7218849E50048503D /* LYMeViewController.m in Sources */,
+				BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

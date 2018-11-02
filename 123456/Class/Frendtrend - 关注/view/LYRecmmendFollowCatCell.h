@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class LYRecommendFollowCategory;
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYRecmmendFollowCatCell : UITableViewCell
-
++ (instancetype)cellWithTableView:(UITableView *)tableView;
+@property (nonatomic,strong)LYRecommendFollowCategory *category;
 @end
 
 NS_ASSUME_NONNULL_END
