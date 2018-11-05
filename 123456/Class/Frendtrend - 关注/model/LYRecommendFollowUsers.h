@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong)NSString *header;
 @property (nonatomic, strong)NSString *screen_name;
 @property (nonatomic, strong)NSString *fans_count;
+@property (nonatomic, assign)CGFloat cellHeight;
+
 @end
 
 NS_ASSUME_NONNULL_END

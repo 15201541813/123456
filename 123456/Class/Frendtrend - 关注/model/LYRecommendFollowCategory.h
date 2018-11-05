@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *id;
 @property (nonatomic, strong) NSArray *list;
 @property (nonatomic, assign) NSInteger total;
+@property (nonatomic, strong) NSMutableArray *users;
 @end
 
 NS_ASSUME_NONNULL_END

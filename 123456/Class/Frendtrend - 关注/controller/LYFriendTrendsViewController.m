@@ -10,6 +10,7 @@
 #import "UIBarButtonItem+extension.h"
 #import <Masonry.h>
 #import "LYRecommenFollowViewController.h"
+#import "LYLoginController.h"
 @interface LYFriendTrendsViewController ()
 /**图片*/
 @property (nonatomic, weak) UIImageView *pictureImageView;
@@ -82,10 +83,15 @@
         _loginBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [_loginBtn setTitleColor:[UIColor redColor] forState:(UIControlStateNormal)];
         [_loginBtn setTitleColor:[UIColor whiteColor] forState:(UIControlStateHighlighted)];
+        [_loginBtn addTarget:self action:@selector(login) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _loginBtn;
 }
-
+- (void)login
+{
+    LYLoginController *login = [[LYLoginController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
+}
 -(void) layoutSubViews
 {
     __weak __typeof__(self) weakSelf = self;
