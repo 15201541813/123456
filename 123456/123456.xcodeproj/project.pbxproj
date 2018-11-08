@@ -35,11 +35,10 @@
 		BAFA5A3C219177DF0029F58F /* LYPlaveHoderTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A3B219177DF0029F58F /* LYPlaveHoderTextField.m */; };
 		BAFA5A3F21917D920029F58F /* LYFastLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A3E21917D920029F58F /* LYFastLogin.m */; };
 		BAFA5A42219184880029F58F /* LYFastLoginBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A41219184880029F58F /* LYFastLoginBtn.m */; };
-		BAFA5A48219287A00029F58F /* LYEssenceWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A47219287A00029F58F /* LYEssenceWordController.m */; };
-		BAFA5A4B219287BA0029F58F /* LYEssenceAllController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A4A219287BA0029F58F /* LYEssenceAllController.m */; };
-		BAFA5A4E219287D70029F58F /* LYEssencePictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A4D219287D70029F58F /* LYEssencePictureController.m */; };
-		BAFA5A51219288010029F58F /* LYEssenceVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A50219288010029F58F /* LYEssenceVideoController.m */; };
-		BAFA5A54219288190029F58F /* LYEssenceVoiceController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A53219288190029F58F /* LYEssenceVoiceController.m */; };
+		BAFA5A572192E0DA0029F58F /* LYEssenceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A562192E0DA0029F58F /* LYEssenceCell.m */; };
+		BAFA5A5A2192EBAC0029F58F /* LYEssenceTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A592192EBAC0029F58F /* LYEssenceTopic.m */; };
+		BAFA5A5D219416FA0029F58F /* LYEssenceTopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A5C219416FA0029F58F /* LYEssenceTopicController.m */; };
+		BAFA5A602194238F0029F58F /* LYEssencePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A5F2194238F0029F58F /* LYEssencePictureView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,16 +99,14 @@
 		BAFA5A3E21917D920029F58F /* LYFastLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFastLogin.m; sourceTree = "<group>"; };
 		BAFA5A40219184880029F58F /* LYFastLoginBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYFastLoginBtn.h; sourceTree = "<group>"; };
 		BAFA5A41219184880029F58F /* LYFastLoginBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYFastLoginBtn.m; sourceTree = "<group>"; };
-		BAFA5A46219287A00029F58F /* LYEssenceWordController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceWordController.h; sourceTree = "<group>"; };
-		BAFA5A47219287A00029F58F /* LYEssenceWordController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceWordController.m; sourceTree = "<group>"; };
-		BAFA5A49219287BA0029F58F /* LYEssenceAllController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceAllController.h; sourceTree = "<group>"; };
-		BAFA5A4A219287BA0029F58F /* LYEssenceAllController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceAllController.m; sourceTree = "<group>"; };
-		BAFA5A4C219287D70029F58F /* LYEssencePictureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssencePictureController.h; sourceTree = "<group>"; };
-		BAFA5A4D219287D70029F58F /* LYEssencePictureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssencePictureController.m; sourceTree = "<group>"; };
-		BAFA5A4F219288010029F58F /* LYEssenceVideoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceVideoController.h; sourceTree = "<group>"; };
-		BAFA5A50219288010029F58F /* LYEssenceVideoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceVideoController.m; sourceTree = "<group>"; };
-		BAFA5A52219288190029F58F /* LYEssenceVoiceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceVoiceController.h; sourceTree = "<group>"; };
-		BAFA5A53219288190029F58F /* LYEssenceVoiceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceVoiceController.m; sourceTree = "<group>"; };
+		BAFA5A552192E0DA0029F58F /* LYEssenceCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceCell.h; sourceTree = "<group>"; };
+		BAFA5A562192E0DA0029F58F /* LYEssenceCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceCell.m; sourceTree = "<group>"; };
+		BAFA5A582192EBAC0029F58F /* LYEssenceTopic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceTopic.h; sourceTree = "<group>"; };
+		BAFA5A592192EBAC0029F58F /* LYEssenceTopic.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceTopic.m; sourceTree = "<group>"; };
+		BAFA5A5B219416FA0029F58F /* LYEssenceTopicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceTopicController.h; sourceTree = "<group>"; };
+		BAFA5A5C219416FA0029F58F /* LYEssenceTopicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceTopicController.m; sourceTree = "<group>"; };
+		BAFA5A5E2194238F0029F58F /* LYEssencePictureView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssencePictureView.h; sourceTree = "<group>"; };
+		BAFA5A5F2194238F0029F58F /* LYEssencePictureView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssencePictureView.m; sourceTree = "<group>"; };
 		C409E0E730E9B5895FD010B1 /* libPods-123456.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-123456.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -200,16 +197,8 @@
 			children = (
 				BA2358AA218849E50048503D /* LYEssenceViewController.h */,
 				BA2358A9218849E50048503D /* LYEssenceViewController.m */,
-				BAFA5A46219287A00029F58F /* LYEssenceWordController.h */,
-				BAFA5A47219287A00029F58F /* LYEssenceWordController.m */,
-				BAFA5A49219287BA0029F58F /* LYEssenceAllController.h */,
-				BAFA5A4A219287BA0029F58F /* LYEssenceAllController.m */,
-				BAFA5A4C219287D70029F58F /* LYEssencePictureController.h */,
-				BAFA5A4D219287D70029F58F /* LYEssencePictureController.m */,
-				BAFA5A4F219288010029F58F /* LYEssenceVideoController.h */,
-				BAFA5A50219288010029F58F /* LYEssenceVideoController.m */,
-				BAFA5A52219288190029F58F /* LYEssenceVoiceController.h */,
-				BAFA5A53219288190029F58F /* LYEssenceVoiceController.m */,
+				BAFA5A5B219416FA0029F58F /* LYEssenceTopicController.h */,
+				BAFA5A5C219416FA0029F58F /* LYEssenceTopicController.m */,
 				BA2358DE2189797B0048503D /* LYRecommendTagController.h */,
 				BA2358DF2189797B0048503D /* LYRecommendTagController.m */,
 			);
@@ -221,6 +210,8 @@
 			children = (
 				BA2358E121897C910048503D /* LYRecommendTag.h */,
 				BA2358E221897C910048503D /* LYRecommendTag.m */,
+				BAFA5A582192EBAC0029F58F /* LYEssenceTopic.h */,
+				BAFA5A592192EBAC0029F58F /* LYEssenceTopic.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -230,6 +221,10 @@
 			children = (
 				BA2358E421897ED70048503D /* LYRecommendTagCell.h */,
 				BA2358E521897ED70048503D /* LYRecommendTagCell.m */,
+				BAFA5A552192E0DA0029F58F /* LYEssenceCell.h */,
+				BAFA5A562192E0DA0029F58F /* LYEssenceCell.m */,
+				BAFA5A5E2194238F0029F58F /* LYEssencePictureView.h */,
+				BAFA5A5F2194238F0029F58F /* LYEssencePictureView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -579,29 +574,28 @@
 				BA23589621883FCF0048503D /* UIImage+extension.m in Sources */,
 				BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */,
 				BA2358DD21885F7A0048503D /* LYTabBar.m in Sources */,
+				BAFA5A602194238F0029F58F /* LYEssencePictureView.m in Sources */,
 				BA235885218706B40048503D /* main.m in Sources */,
 				BA235877218706B30048503D /* AppDelegate.m in Sources */,
 				BAFA5A42219184880029F58F /* LYFastLoginBtn.m in Sources */,
 				BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */,
 				BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */,
 				BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */,
-				BAFA5A48219287A00029F58F /* LYEssenceWordController.m in Sources */,
 				BA2358D4218849E50048503D /* LYPushViewController.m in Sources */,
 				BA2358E02189797B0048503D /* LYRecommendTagController.m in Sources */,
 				BA2358D5218849E50048503D /* LYNavigationController.m in Sources */,
-				BAFA5A4B219287BA0029F58F /* LYEssenceAllController.m in Sources */,
+				BAFA5A5A2192EBAC0029F58F /* LYEssenceTopic.m in Sources */,
 				BA2358E621897ED70048503D /* LYRecommendTagCell.m in Sources */,
 				BA2358D6218849E50048503D /* LYTabBarViewController.m in Sources */,
 				BA2358D1218849E50048503D /* LYEssenceViewController.m in Sources */,
 				BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */,
 				BAFA5A3F21917D920029F58F /* LYFastLogin.m in Sources */,
+				BAFA5A572192E0DA0029F58F /* LYEssenceCell.m in Sources */,
 				BAFA5A33218FEB670029F58F /* LYRecommendFollowUsersCell.m in Sources */,
 				BAFA5A3C219177DF0029F58F /* LYPlaveHoderTextField.m in Sources */,
-				BAFA5A51219288010029F58F /* LYEssenceVideoController.m in Sources */,
 				BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */,
-				BAFA5A54219288190029F58F /* LYEssenceVoiceController.m in Sources */,
 				BA2358D7218849E50048503D /* LYMeViewController.m in Sources */,
-				BAFA5A4E219287D70029F58F /* LYEssencePictureController.m in Sources */,
+				BAFA5A5D219416FA0029F58F /* LYEssenceTopicController.m in Sources */,
 				BAFA5A39219166640029F58F /* LYAccountScrollView.m in Sources */,
 				BAFA5A36219039CF0029F58F /* LYLoginController.m in Sources */,
 				BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */,

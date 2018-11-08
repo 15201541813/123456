@@ -9,11 +9,7 @@
 #import "LYEssenceViewController.h"
 #import "UIBarButtonItem+extension.h"
 #import "LYRecommendTagController.h"
-#import "LYEssenceWordController.h"
-#import "LYEssenceAllController.h"
-#import "LYEssenceVideoController.h"
-#import "LYEssencePictureController.h"
-#import "LYEssenceVoiceController.h"
+#import "LYEssenceTopicController.h"
 @interface LYEssenceViewController ()<UIScrollViewDelegate>
 /**标题view*/
 @property (nonatomic, strong) UIView *titleView;
@@ -54,18 +50,22 @@
 #pragma mark - addChildViewControllers添加所有的自控制器
 - (void)addChildViewControllers
 {
-    [self addChildviewControllersWithController:[[LYEssenceWordController alloc] init] title:@"段子"];
-    [self addChildviewControllersWithController:[[LYEssenceAllController alloc] init] title:@"全部"];
-    [self addChildviewControllersWithController:[[LYEssencePictureController alloc] init] title:@"图片"];
-    [self addChildviewControllersWithController:[[LYEssenceVideoController alloc] init] title:@"视频"];
-    [self addChildviewControllersWithController:[[LYEssenceVoiceController alloc] init] title:@"声音"];
+    
+    [self addChildviewControllersWithTitle:@"段子" type:(LYEssenceOfTopicWord)];
+    [self addChildviewControllersWithTitle:@"全部" type:(LYEssenceOfTopicAll)];
+    [self addChildviewControllersWithTitle:@"图片" type:(LYEssenceOfTopicPicture)];
+    [self addChildviewControllersWithTitle:@"视频" type:(LYEssenceOfTopicVideo)];
+    [self addChildviewControllersWithTitle:@"音频" type:(LYEssenceOfTopicVoice)];
     
 }
 #pragma mark - 添加每个自控制器
-- (void)addChildviewControllersWithController:(UIViewController *)controller title:(NSString *)title
+- (void)addChildviewControllersWithTitle:(NSString *)title type:(LYEssenceOfTopic)type
 {
-    [self addChildViewController:controller];
-    controller.title = title;
+    LYEssenceTopicController *topic = [[LYEssenceTopicController alloc] init];
+    [self addChildViewController:topic];
+    topic.title = title;
+    topic.type = type;
+    
 }
 #pragma mark - buttonClick
 - (void)buttonClick
@@ -181,8 +181,9 @@
     [self.topicScrollView addSubview:vc.view];
     CGFloat X = index * LYScreenWidth;
     vc.tableView.frame = CGRectMake(X, 0, LYScreenWidth, LYScreenHeight);
-    vc.tableView.contentInset = UIEdgeInsetsMake(Y, 0, 0, 0);
+    vc.tableView.contentInset = UIEdgeInsetsMake(Y, 0, 84, 0);
     vc.tableView.translatesAutoresizingMaskIntoConstraints = NO;
+    vc.tableView.scrollIndicatorInsets = vc.tableView.contentInset;
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView

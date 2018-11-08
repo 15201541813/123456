@@ -67,7 +67,7 @@
         if (cate.users.count >= [responseObject[@"total"] integerValue]) {
             [self.usersTableView.mj_footer endRefreshingWithNoMoreData];
         }else [self.usersTableView.mj_footer endRefreshing];
-        self.currentPage += 1;
+        self.currentPage = page;
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [SVProgressHUD showErrorWithStatus:@"数据加载失败"];
         [self.usersTableView.mj_header endRefreshing];
