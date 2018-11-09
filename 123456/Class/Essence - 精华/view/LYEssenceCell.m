@@ -50,6 +50,14 @@
     self.text.text = topic.text;
     self.text.frame = topic.textLabelFrame;
     self.pictureView.topic = topic;
+    self.pictureView.frame = topic.pictureFrame;
+    if (topic.type == LYEssenceOfTopicWord) {
+        self.pictureView.hidden = YES;
+    }if (topic.type == LYEssenceOfTopicVideo) {
+        self.pictureView.hidden = YES;
+    }if (topic.type == LYEssenceOfTopicVoice) {
+        self.pictureView.hidden = YES;
+    }
     
 }
 #pragma mark - 控件懒加载

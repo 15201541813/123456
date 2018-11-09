@@ -10,7 +10,7 @@
 @class LYEssenceTopic;
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LYEssencePictureView : UIImageView
+@interface LYEssencePictureView : UIView
 @property (nonatomic, strong) LYEssenceTopic *topic;
 @end
 

@@ -12,11 +12,23 @@
 - (CGFloat)rowHeight
 {
     if (!_rowHeight) {
-      CGSize maxSize = CGSizeMake(LYScreenWidth - 40, MAXFLOAT);
+        CGFloat textWidth = LYScreenWidth - 40;
+        CGSize maxSize = CGSizeMake(LYScreenWidth - 40, MAXFLOAT);
         NSDictionary *attribute = @{NSFontAttributeName: [UIFont systemFontOfSize:12]};
         CGFloat textLabelHeight = [self.text boundingRectWithSize:maxSize options:(NSStringDrawingUsesLineFragmentOrigin) attributes:attribute context:nil].size.height;
         _rowHeight = 40 + 40 + textLabelHeight;
-        self.textLabelFrame = CGRectMake(10, 60, LYScreenWidth - 40, textLabelHeight);
+        self.textLabelFrame = CGRectMake(10, 60, textWidth, textLabelHeight);
+        CGFloat textLabelMaxY = CGRectGetMaxY(self.textLabelFrame);
+        if (self.type == LYEssenceOfTopicPicture) {
+            CGFloat pictureW = textWidth;
+            CGFloat pictureH = pictureW * self.height / self.width;
+            if (pictureH > 800) {
+                self.isBigPicture = YES;
+                pictureH = 250;
+            }else self.isBigPicture = NO;
+            self.pictureFrame = CGRectMake(10, textLabelMaxY + 10, pictureW, pictureH);
+            _rowHeight += pictureH + 10;
+        }
     }
     return _rowHeight;
 }
