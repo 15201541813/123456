@@ -29,6 +29,12 @@
             self.pictureFrame = CGRectMake(10, textLabelMaxY + 10, pictureW, pictureH);
             _rowHeight += pictureH + 10;
         }
+        if (self.type == LYEssenceOfTopicVideo) {
+            CGFloat pictureW = textWidth;
+            CGFloat pictureH = pictureW * self.height / self.width;
+            self.videoFrame = CGRectMake(10, textLabelMaxY + 10, pictureW, pictureH);
+            _rowHeight += pictureH + 10;
+        }
     }
     return _rowHeight;
 }

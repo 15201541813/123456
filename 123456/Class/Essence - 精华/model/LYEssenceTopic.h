@@ -43,9 +43,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *is_gif;
 /**是否是新浪会员*/
 @property (nonatomic, assign) int sina_v;
+/**播放次数*/
+@property (nonatomic, assign) NSInteger playcount;
+/**视频长度*/
+@property (nonatomic, strong) NSString *videotime;
+/**显示在页面中的视频图片的url*/
+@property (nonatomic, strong) NSString *image_small;
 /**返回的图片是否是大图*/
 @property (nonatomic, assign) int isBigPicture;
 @property (nonatomic, assign) CGRect pictureFrame;
+@property (nonatomic, assign) CGRect videoFrame;
+@property (nonatomic, assign) CGRect voiceFrame;
 @end
 
 NS_ASSUME_NONNULL_END

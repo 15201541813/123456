@@ -10,6 +10,7 @@
 #import "LYEssenceTopic.h"
 #import <UIImageView+WebCache.h>
 #import "LYEssencePictureView.h"
+#import "LYEssenceVideo.h"
 @interface LYEssenceCell()//comment  love
 //screen_name//text//created_at//cai  repost
 @property (nonatomic, weak) UIImageView *profile_image;
@@ -18,6 +19,7 @@
 @property (nonatomic, weak) UILabel *text;
 @property (nonatomic, weak) LYEssencePictureView *pictureView;
 @property (nonatomic, weak) UIButton *followBtn;
+@property (nonatomic, weak) LYEssenceVideo *video;
 
 
 @end
@@ -51,12 +53,20 @@
     self.text.frame = topic.textLabelFrame;
     self.pictureView.topic = topic;
     self.pictureView.frame = topic.pictureFrame;
+    self.video.frame = topic.videoFrame;
+    self.video.topic = topic;
     if (topic.type == LYEssenceOfTopicWord) {
         self.pictureView.hidden = YES;
+        self.video.hidden = YES;
     }if (topic.type == LYEssenceOfTopicVideo) {
         self.pictureView.hidden = YES;
+        self.video.hidden = NO;
     }if (topic.type == LYEssenceOfTopicVoice) {
         self.pictureView.hidden = YES;
+        self.video.hidden = YES;
+    }if (topic.type == LYEssenceOfTopicPicture) {
+        self.pictureView.hidden = NO;
+        self.video.hidden = YES;
     }
     
 }
@@ -130,6 +140,16 @@
         _pictureView = picture;
     }
     return _pictureView;
+}
+
+- (LYEssenceVideo *)video
+{
+    if (_video == nil) {
+        LYEssenceVideo *view = [[LYEssenceVideo alloc] init];
+        [self.contentView addSubview:view];
+        _video = view;
+    }
+    return _video;
 }
 - (void)layoutSubviews
 {
