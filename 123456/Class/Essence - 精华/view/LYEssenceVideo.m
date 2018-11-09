@@ -9,6 +9,7 @@
 #import "LYEssenceVideo.h"
 #import <UIImageView+WebCache.h>
 #import "LYEssenceTopic.h"
+#import "LYEssenceFullPictureController.h"
 @interface LYEssenceVideo()
 @property (nonatomic, weak)UIImageView *picture;
 @property (nonatomic, weak)UILabel *playCount;
@@ -23,7 +24,12 @@
     }
     return self;
 }
-
+- (void)fullImage
+{
+    LYEssenceFullPictureController *full = [[LYEssenceFullPictureController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:full animated:YES completion:nil];
+    full.topic = self.topic;
+}
 - (void)setTopic:(LYEssenceTopic *)topic
 {
     _topic = topic;
@@ -48,6 +54,8 @@
         [self addSubview:pic];
         _picture = pic;
         _picture.userInteractionEnabled = YES;
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fullImage)];
+        [_picture addGestureRecognizer:tap];
     }
     return _picture;
 }

@@ -9,6 +9,7 @@
 #import "LYEssencePictureView.h"
 #import "LYEssenceTopic.h"
 #import <UIImageView+WebCache.h>
+#import "LYEssenceFullPictureController.h"
 @interface LYEssencePictureView()
 @property (nonatomic, weak) UIImageView *gif;
 @property (nonatomic, weak) UIButton *bigImageBtn;
@@ -38,6 +39,13 @@
         self.contentMode = UIViewContentModeScaleAspectFit;
     }else self.bigImageBtn.hidden = YES;
 }
+
+- (void)seeFullPicture
+{
+    LYEssenceFullPictureController *full = [[LYEssenceFullPictureController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:full animated:YES completion:nil];
+    full.topic = self.topic;
+}
 - (UIImageView *)picture
 {
     if (_picture == nil) {
@@ -45,6 +53,9 @@
         [self addSubview:picture];
         _picture = picture;
         _picture.backgroundColor = [UIColor clearColor];
+        UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(seeFullPicture)];
+        [_picture addGestureRecognizer:gesture];
+        _picture.userInteractionEnabled = YES;
     }return _picture;
 }
 - (UIImageView *)backImage

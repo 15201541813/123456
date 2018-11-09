@@ -27,6 +27,7 @@
 		BA2358E92189AE830048503D /* UIView+XMGExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358E72189AE830048503D /* UIView+XMGExtension.m */; };
 		BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */; };
 		BAA55C3621956A44004C1300 /* LYEssenceVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C3521956A44004C1300 /* LYEssenceVideo.m */; };
+		BAA55C3921957AA8004C1300 /* LYEssenceFullPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C3821957AA8004C1300 /* LYEssenceFullPictureController.m */; };
 		BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */; };
 		BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */; };
 		BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */; };
@@ -83,6 +84,8 @@
 		BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecommenFollowViewController.m; sourceTree = "<group>"; };
 		BAA55C3421956A44004C1300 /* LYEssenceVideo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceVideo.h; sourceTree = "<group>"; };
 		BAA55C3521956A44004C1300 /* LYEssenceVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceVideo.m; sourceTree = "<group>"; };
+		BAA55C3721957AA8004C1300 /* LYEssenceFullPictureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceFullPictureController.h; sourceTree = "<group>"; };
+		BAA55C3821957AA8004C1300 /* LYEssenceFullPictureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceFullPictureController.m; sourceTree = "<group>"; };
 		BAFA5A24218AD6190029F58F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecmmendFollowCatCell.h; sourceTree = "<group>"; };
 		BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecmmendFollowCatCell.m; sourceTree = "<group>"; };
@@ -204,6 +207,8 @@
 				BAFA5A5C219416FA0029F58F /* LYEssenceTopicController.m */,
 				BA2358DE2189797B0048503D /* LYRecommendTagController.h */,
 				BA2358DF2189797B0048503D /* LYRecommendTagController.m */,
+				BAA55C3721957AA8004C1300 /* LYEssenceFullPictureController.h */,
+				BAA55C3821957AA8004C1300 /* LYEssenceFullPictureController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -597,6 +602,7 @@
 				BAFA5A3F21917D920029F58F /* LYFastLogin.m in Sources */,
 				BAA55C3621956A44004C1300 /* LYEssenceVideo.m in Sources */,
 				BAFA5A572192E0DA0029F58F /* LYEssenceCell.m in Sources */,
+				BAA55C3921957AA8004C1300 /* LYEssenceFullPictureController.m in Sources */,
 				BAFA5A33218FEB670029F58F /* LYRecommendFollowUsersCell.m in Sources */,
 				BAFA5A3C219177DF0029F58F /* LYPlaveHoderTextField.m in Sources */,
 				BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */,
