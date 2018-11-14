@@ -11,6 +11,7 @@
 #import <UIImageView+WebCache.h>
 #import "LYEssencePictureView.h"
 #import "LYEssenceVideo.h"
+#import "LYEssenceBottomVIew.h"
 @interface LYEssenceCell()//comment  love
 //screen_name//text//created_at//cai  repost
 @property (nonatomic, weak) UIImageView *profile_image;
@@ -20,6 +21,7 @@
 @property (nonatomic, weak) LYEssencePictureView *pictureView;
 @property (nonatomic, weak) UIButton *followBtn;
 @property (nonatomic, weak) LYEssenceVideo *video;
+@property (nonatomic, weak) LYEssenceBottomVIew *bottomView;
 
 
 @end
@@ -55,6 +57,9 @@
     self.pictureView.frame = topic.pictureFrame;
     self.video.frame = topic.videoFrame;
     self.video.topic = topic;
+    self.bottomView.frame = topic.bottomViewFrame;
+    self.bottomView.topic = topic;
+    
     if (topic.type == LYEssenceOfTopicWord) {
         self.pictureView.hidden = YES;
         self.video.hidden = YES;
@@ -150,6 +155,16 @@
         _video = view;
     }
     return _video;
+}
+
+- (LYEssenceBottomVIew *)bottomView
+{
+    if (_bottomView == nil) {
+        LYEssenceBottomVIew *view = [[LYEssenceBottomVIew alloc] init];
+        [self.contentView addSubview:view];
+        _bottomView = view;
+    }
+    return _bottomView;
 }
 - (void)layoutSubviews
 {

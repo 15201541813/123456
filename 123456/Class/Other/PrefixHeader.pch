@@ -17,6 +17,7 @@ typedef enum LYEssenceOfTopic{
 }LYEssenceOfTopic;
 #import <Masonry.h>
 #import "UIView+XMGExtension.h"
+#import "UIButton+LYExtension.h"
 #define LYDefaultColor [UIColor colorWithRed:223/255.0 green:223/255.0 blue:223/255.0 alpha:1];
 #define LYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1];
 #define LYScreenWidth [UIScreen mainScreen].bounds.size.width

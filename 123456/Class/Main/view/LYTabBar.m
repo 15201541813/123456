@@ -8,6 +8,7 @@
 
 #import "LYTabBar.h"
 #import "UIView+XMGExtension.h"
+#import "LYPublishView.h"
 @interface LYTabBar()
 @property (nonatomic, weak) UIButton *publishButton;
 
@@ -31,10 +32,15 @@
         [_publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_icon"] forState:(UIControlStateNormal)];
         [_publishButton setBackgroundImage:[UIImage imageNamed:@"tabBar_publish_click_icon"] forState:(UIControlStateHighlighted)];
         [_publishButton sizeToFit];
+        [_publishButton addTarget:self action:@selector(publishBtnClickedToPublish) forControlEvents:(UIControlEventTouchUpInside)];
     }
     return _publishButton;
 }
-
+- (void)publishBtnClickedToPublish
+{
+    LYPublishView *publish = [[LYPublishView alloc] init];
+    [[UIApplication sharedApplication].keyWindow addSubview:publish];
+}
 - (void)layoutSubviews
 {
     [super layoutSubviews];

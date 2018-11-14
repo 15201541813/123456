@@ -54,6 +54,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGRect pictureFrame;
 @property (nonatomic, assign) CGRect videoFrame;
 @property (nonatomic, assign) CGRect voiceFrame;
+@property (nonatomic, assign) CGRect bottomViewFrame;
 @end
 
 NS_ASSUME_NONNULL_END

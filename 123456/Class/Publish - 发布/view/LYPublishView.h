@@ -1,8 +1,8 @@
 //
-//  LYPushViewController.h
+//  LYPublishView.h
 //  123456
 //
-//  Created by 李艳 on 2018/10/30.
+//  Created by 李艳 on 2018/11/13.
 //  Copyright © 2018年 LY. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LYPushViewController : UIViewController
+@interface LYPublishView : UIView
 
 @end
 

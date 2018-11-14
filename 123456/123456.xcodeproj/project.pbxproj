@@ -15,7 +15,6 @@
 		BA2358D1218849E50048503D /* LYEssenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358A9218849E50048503D /* LYEssenceViewController.m */; };
 		BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358B0218849E50048503D /* LYFriendTrendsViewController.m */; };
 		BA2358D3218849E50048503D /* LYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358B9218849E50048503D /* LYNewViewController.m */; };
-		BA2358D4218849E50048503D /* LYPushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358BF218849E50048503D /* LYPushViewController.m */; };
 		BA2358D5218849E50048503D /* LYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358C5218849E50048503D /* LYNavigationController.m */; };
 		BA2358D6218849E50048503D /* LYTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358C6218849E50048503D /* LYTabBarViewController.m */; };
 		BA2358D7218849E50048503D /* LYMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358CD218849E50048503D /* LYMeViewController.m */; };
@@ -28,6 +27,10 @@
 		BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2358EB218ACF3B0048503D /* LYRecommenFollowViewController.m */; };
 		BAA55C3621956A44004C1300 /* LYEssenceVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C3521956A44004C1300 /* LYEssenceVideo.m */; };
 		BAA55C3921957AA8004C1300 /* LYEssenceFullPictureController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C3821957AA8004C1300 /* LYEssenceFullPictureController.m */; };
+		BAA55C3C219A795D004C1300 /* LYPublishView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C3B219A795D004C1300 /* LYPublishView.m */; };
+		BAA55C3F219AABCB004C1300 /* LYPublishBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C3E219AABCB004C1300 /* LYPublishBtn.m */; };
+		BAA55C42219BC6F3004C1300 /* LYEssenceBottomVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C41219BC6F3004C1300 /* LYEssenceBottomVIew.m */; };
+		BAA55C45219BCEC8004C1300 /* UIButton+LYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C44219BCEC8004C1300 /* UIButton+LYExtension.m */; };
 		BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */; };
 		BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */; };
 		BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */; };
@@ -60,8 +63,6 @@
 		BA2358B0218849E50048503D /* LYFriendTrendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYFriendTrendsViewController.m; sourceTree = "<group>"; };
 		BA2358B9218849E50048503D /* LYNewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNewViewController.m; sourceTree = "<group>"; };
 		BA2358BA218849E50048503D /* LYNewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYNewViewController.h; sourceTree = "<group>"; };
-		BA2358BF218849E50048503D /* LYPushViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYPushViewController.m; sourceTree = "<group>"; };
-		BA2358C0218849E50048503D /* LYPushViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYPushViewController.h; sourceTree = "<group>"; };
 		BA2358C5218849E50048503D /* LYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYNavigationController.m; sourceTree = "<group>"; };
 		BA2358C6218849E50048503D /* LYTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LYTabBarViewController.m; sourceTree = "<group>"; };
 		BA2358C7218849E50048503D /* LYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LYNavigationController.h; sourceTree = "<group>"; };
@@ -86,6 +87,14 @@
 		BAA55C3521956A44004C1300 /* LYEssenceVideo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceVideo.m; sourceTree = "<group>"; };
 		BAA55C3721957AA8004C1300 /* LYEssenceFullPictureController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceFullPictureController.h; sourceTree = "<group>"; };
 		BAA55C3821957AA8004C1300 /* LYEssenceFullPictureController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceFullPictureController.m; sourceTree = "<group>"; };
+		BAA55C3A219A795D004C1300 /* LYPublishView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPublishView.h; sourceTree = "<group>"; };
+		BAA55C3B219A795D004C1300 /* LYPublishView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPublishView.m; sourceTree = "<group>"; };
+		BAA55C3D219AABCB004C1300 /* LYPublishBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPublishBtn.h; sourceTree = "<group>"; };
+		BAA55C3E219AABCB004C1300 /* LYPublishBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPublishBtn.m; sourceTree = "<group>"; };
+		BAA55C40219BC6F3004C1300 /* LYEssenceBottomVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceBottomVIew.h; sourceTree = "<group>"; };
+		BAA55C41219BC6F3004C1300 /* LYEssenceBottomVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceBottomVIew.m; sourceTree = "<group>"; };
+		BAA55C43219BCEC8004C1300 /* UIButton+LYExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+LYExtension.h"; sourceTree = "<group>"; };
+		BAA55C44219BCEC8004C1300 /* UIButton+LYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYExtension.m"; sourceTree = "<group>"; };
 		BAFA5A24218AD6190029F58F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecmmendFollowCatCell.h; sourceTree = "<group>"; };
 		BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecmmendFollowCatCell.m; sourceTree = "<group>"; };
@@ -235,6 +244,8 @@
 				BAFA5A5F2194238F0029F58F /* LYEssencePictureView.m */,
 				BAA55C3421956A44004C1300 /* LYEssenceVideo.h */,
 				BAA55C3521956A44004C1300 /* LYEssenceVideo.m */,
+				BAA55C40219BC6F3004C1300 /* LYEssenceBottomVIew.h */,
+				BAA55C41219BC6F3004C1300 /* LYEssenceBottomVIew.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -326,6 +337,8 @@
 				BA23589521883FCF0048503D /* UIImage+extension.m */,
 				BA2358D821884CB80048503D /* UIBarButtonItem+extension.h */,
 				BA2358D921884CB80048503D /* UIBarButtonItem+extension.m */,
+				BAA55C43219BCEC8004C1300 /* UIButton+LYExtension.h */,
+				BAA55C44219BCEC8004C1300 /* UIButton+LYExtension.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -376,8 +389,6 @@
 		BA2358BE218849E50048503D /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				BA2358BF218849E50048503D /* LYPushViewController.m */,
-				BA2358C0218849E50048503D /* LYPushViewController.h */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -392,6 +403,10 @@
 		BA2358C2218849E50048503D /* view */ = {
 			isa = PBXGroup;
 			children = (
+				BAA55C3A219A795D004C1300 /* LYPublishView.h */,
+				BAA55C3B219A795D004C1300 /* LYPublishView.m */,
+				BAA55C3D219AABCB004C1300 /* LYPublishBtn.h */,
+				BAA55C3E219AABCB004C1300 /* LYPublishBtn.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -580,18 +595,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2358E321897C910048503D /* LYRecommendTag.m in Sources */,
+				BAA55C42219BC6F3004C1300 /* LYEssenceBottomVIew.m in Sources */,
+				BAA55C3C219A795D004C1300 /* LYPublishView.m in Sources */,
 				BA2358D3218849E50048503D /* LYNewViewController.m in Sources */,
 				BA23589621883FCF0048503D /* UIImage+extension.m in Sources */,
 				BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */,
 				BA2358DD21885F7A0048503D /* LYTabBar.m in Sources */,
 				BAFA5A602194238F0029F58F /* LYEssencePictureView.m in Sources */,
 				BA235885218706B40048503D /* main.m in Sources */,
+				BAA55C45219BCEC8004C1300 /* UIButton+LYExtension.m in Sources */,
+				BAA55C3F219AABCB004C1300 /* LYPublishBtn.m in Sources */,
 				BA235877218706B30048503D /* AppDelegate.m in Sources */,
 				BAFA5A42219184880029F58F /* LYFastLoginBtn.m in Sources */,
 				BA2358D2218849E50048503D /* LYFriendTrendsViewController.m in Sources */,
 				BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */,
 				BA2358EC218ACF3B0048503D /* LYRecommenFollowViewController.m in Sources */,
-				BA2358D4218849E50048503D /* LYPushViewController.m in Sources */,
 				BA2358E02189797B0048503D /* LYRecommendTagController.m in Sources */,
 				BA2358D5218849E50048503D /* LYNavigationController.m in Sources */,
 				BAFA5A5A2192EBAC0029F58F /* LYEssenceTopic.m in Sources */,
