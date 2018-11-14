@@ -13,6 +13,7 @@
 #import "LYEssenceTopic.h"
 #import <MJExtension.h>
 #import <MJRefresh.h>
+#import "LYNewViewController.h"
 @interface LYEssenceTopicController ()
 @property (nonatomic, strong) NSMutableArray *topics;
 @property (nonatomic, strong) NSString *maxtime;
@@ -44,13 +45,20 @@
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewDatas)];
     [self.tableView.mj_header beginRefreshing];
 }
+
+- (NSString *)a
+{
+    if ([self.parentViewController isKindOfClass:[LYNewViewController class]]) {
+        return @"newlist";
+    }else return @"list";
+}
 #pragma mark - loadMoreDatas上拉加载更多信息
 - (void)loadMoreDatas
 {
     [self.tableView.mj_header endRefreshing];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
-    param[@"a"] = @"list";
+    param[@"a"] = [self a];
     param[@"c"] = @"data";
     param[@"maxtime"] = self.maxtime;
     param[@"type"] = @(self.type);
@@ -86,7 +94,7 @@
     [self.tableView.mj_footer endRefreshing];
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
-    param[@"a"] = @"list";
+    param[@"a"] = [self a];
     param[@"c"] = @"data";
     param[@"type"] = @(self.type);
     self.param = param;

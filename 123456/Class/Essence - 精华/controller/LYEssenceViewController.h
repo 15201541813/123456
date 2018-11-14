@@ -11,7 +11,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LYEssenceViewController : UIViewController
-
+@property (nonatomic, strong) NSString *a;
 @end
 
 NS_ASSUME_NONNULL_END
