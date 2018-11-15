@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString *maxtime;
 @property (nonatomic, assign) NSInteger currentPage;
 @property (nonatomic, strong) NSMutableDictionary *param;
+@property (nonatomic, assign) NSInteger lastIndex;
 @end
 
 @implementation LYEssenceTopicController
@@ -29,8 +30,16 @@
     [self basicSeting];
     //加载数据
     [self setRefresh];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(refresh) name:LYTabBarButtonDidClicked object:nil];
 }
-
+- (void)refresh
+{
+    if (self.lastIndex == self.tabBarController.selectedIndex && [self.view isShowingOnKeyWindow]) {
+        [self.tableView.mj_header beginRefreshing];
+    }
+    self.lastIndex = self.tabBarController.selectedIndex;
+}
 #pragma mark - 界面基本设置
 - (void)basicSeting
 {

@@ -22,5 +22,6 @@ typedef enum LYEssenceOfTopic{
 #define LYColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1];
 #define LYScreenWidth [UIScreen mainScreen].bounds.size.width
 #define LYScreenHeight [UIScreen mainScreen].bounds.size.height
+#define LYTabBarButtonDidClicked @"LYTabBarButtonDidClicked"
 
 #endif /* PrefixHeader_pch */

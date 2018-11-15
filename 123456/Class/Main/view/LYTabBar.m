@@ -49,18 +49,21 @@
     CGFloat itemWidth = width / 5;
     self.publishButton.center = CGPointMake(width / 2, height / 2);
     NSInteger index = 0;
-    for (UIView *view in self.subviews) {
-        if (![view isKindOfClass:[UIControl class]] || view == self.publishButton) continue;
-        view.frame = CGRectMake(index * itemWidth, 1, itemWidth, height);
+    for (UIButton *button in self.subviews) {
+        if (![button isKindOfClass:[UIControl class]] || button == self.publishButton) continue;
+        button.frame = CGRectMake(index * itemWidth, 1, itemWidth, height);
         if (index >= 2) {
-            view.frame = CGRectMake((index + 1) * itemWidth, 0, itemWidth, height);
+            button.frame = CGRectMake((index + 1) * itemWidth, 0, itemWidth, height);
         }
         index = index + 1;
+        [button addTarget:self action:@selector(tabBarButtonDidClicked) forControlEvents:(UIControlEventTouchUpInside)];
+
     }
-   
-    
-    
-    
 }
 
+
+- (void)tabBarButtonDidClicked
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:LYTabBarButtonDidClicked object:nil];
+}
 @end

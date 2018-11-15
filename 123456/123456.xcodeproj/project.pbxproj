@@ -33,6 +33,7 @@
 		BAA55C48219C0204004C1300 /* LYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C47219C0204004C1300 /* LYNewViewController.m */; };
 		BAA55C4B219C0BEE004C1300 /* LYEssenceCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C4A219C0BEE004C1300 /* LYEssenceCommentController.m */; };
 		BAA55C4E219C11FA004C1300 /* LYEssenceCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C4D219C11FA004C1300 /* LYEssenceCommentCell.m */; };
+		BAA55C51219D5578004C1300 /* LYStatusClickView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C50219D5578004C1300 /* LYStatusClickView.m */; };
 		BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */; };
 		BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */; };
 		BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */; };
@@ -101,6 +102,8 @@
 		BAA55C4A219C0BEE004C1300 /* LYEssenceCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceCommentController.m; sourceTree = "<group>"; };
 		BAA55C4C219C11FA004C1300 /* LYEssenceCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceCommentCell.h; sourceTree = "<group>"; };
 		BAA55C4D219C11FA004C1300 /* LYEssenceCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceCommentCell.m; sourceTree = "<group>"; };
+		BAA55C4F219D5578004C1300 /* LYStatusClickView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYStatusClickView.h; sourceTree = "<group>"; };
+		BAA55C50219D5578004C1300 /* LYStatusClickView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYStatusClickView.m; sourceTree = "<group>"; };
 		BAFA5A24218AD6190029F58F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecmmendFollowCatCell.h; sourceTree = "<group>"; };
 		BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecmmendFollowCatCell.m; sourceTree = "<group>"; };
@@ -456,6 +459,8 @@
 			children = (
 				BA2358DB21885F7A0048503D /* LYTabBar.h */,
 				BA2358DC21885F7A0048503D /* LYTabBar.m */,
+				BAA55C4F219D5578004C1300 /* LYStatusClickView.h */,
+				BAA55C50219D5578004C1300 /* LYStatusClickView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -610,6 +615,7 @@
 				BAA55C3C219A795D004C1300 /* LYPublishView.m in Sources */,
 				BA23589621883FCF0048503D /* UIImage+extension.m in Sources */,
 				BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */,
+				BAA55C51219D5578004C1300 /* LYStatusClickView.m in Sources */,
 				BA2358DD21885F7A0048503D /* LYTabBar.m in Sources */,
 				BAFA5A602194238F0029F58F /* LYEssencePictureView.m in Sources */,
 				BA235885218706B40048503D /* main.m in Sources */,
