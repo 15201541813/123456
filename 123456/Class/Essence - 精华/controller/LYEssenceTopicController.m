@@ -14,6 +14,7 @@
 #import <MJExtension.h>
 #import <MJRefresh.h>
 #import "LYNewViewController.h"
+#import "LYEssenceCommentController.h"
 @interface LYEssenceTopicController ()
 @property (nonatomic, strong) NSMutableArray *topics;
 @property (nonatomic, strong) NSString *maxtime;
@@ -140,6 +141,12 @@
     LYEssenceTopic *topic = self.topics[indexPath.row];
     return topic.rowHeight;
 }
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    LYEssenceCommentController *comment = [[LYEssenceCommentController alloc] init];
+    comment.topic = self.topics[indexPath.row];
+    [self.navigationController pushViewController:comment animated:YES];
+    
+}
 
 @end

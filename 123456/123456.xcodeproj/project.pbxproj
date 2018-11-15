@@ -31,6 +31,8 @@
 		BAA55C42219BC6F3004C1300 /* LYEssenceBottomVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C41219BC6F3004C1300 /* LYEssenceBottomVIew.m */; };
 		BAA55C45219BCEC8004C1300 /* UIButton+LYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C44219BCEC8004C1300 /* UIButton+LYExtension.m */; };
 		BAA55C48219C0204004C1300 /* LYNewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C47219C0204004C1300 /* LYNewViewController.m */; };
+		BAA55C4B219C0BEE004C1300 /* LYEssenceCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C4A219C0BEE004C1300 /* LYEssenceCommentController.m */; };
+		BAA55C4E219C11FA004C1300 /* LYEssenceCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAA55C4D219C11FA004C1300 /* LYEssenceCommentCell.m */; };
 		BAFA5A27218AE70A0029F58F /* LYRecmmendFollowCatCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */; };
 		BAFA5A2A218C38F60029F58F /* LYRecommendFollowCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A29218C38F60029F58F /* LYRecommendFollowCategory.m */; };
 		BAFA5A2D218C4FBE0029F58F /* LYRecommendFollowUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFA5A2C218C4FBE0029F58F /* LYRecommendFollowUsers.m */; };
@@ -95,6 +97,10 @@
 		BAA55C44219BCEC8004C1300 /* UIButton+LYExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LYExtension.m"; sourceTree = "<group>"; };
 		BAA55C46219C0204004C1300 /* LYNewViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYNewViewController.h; sourceTree = "<group>"; };
 		BAA55C47219C0204004C1300 /* LYNewViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYNewViewController.m; sourceTree = "<group>"; };
+		BAA55C49219C0BEE004C1300 /* LYEssenceCommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceCommentController.h; sourceTree = "<group>"; };
+		BAA55C4A219C0BEE004C1300 /* LYEssenceCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceCommentController.m; sourceTree = "<group>"; };
+		BAA55C4C219C11FA004C1300 /* LYEssenceCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYEssenceCommentCell.h; sourceTree = "<group>"; };
+		BAA55C4D219C11FA004C1300 /* LYEssenceCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYEssenceCommentCell.m; sourceTree = "<group>"; };
 		BAFA5A24218AD6190029F58F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		BAFA5A25218AE70A0029F58F /* LYRecmmendFollowCatCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYRecmmendFollowCatCell.h; sourceTree = "<group>"; };
 		BAFA5A26218AE70A0029F58F /* LYRecmmendFollowCatCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYRecmmendFollowCatCell.m; sourceTree = "<group>"; };
@@ -200,8 +206,8 @@
 		BA2358A7218849E50048503D /* Essence - 精华 */ = {
 			isa = PBXGroup;
 			children = (
-				BA2358A8218849E50048503D /* controller */,
 				BA2358AB218849E50048503D /* model */,
+				BA2358A8218849E50048503D /* controller */,
 				BA2358AC218849E50048503D /* view */,
 			);
 			path = "Essence - 精华";
@@ -218,6 +224,8 @@
 				BA2358DF2189797B0048503D /* LYRecommendTagController.m */,
 				BAA55C3721957AA8004C1300 /* LYEssenceFullPictureController.h */,
 				BAA55C3821957AA8004C1300 /* LYEssenceFullPictureController.m */,
+				BAA55C49219C0BEE004C1300 /* LYEssenceCommentController.h */,
+				BAA55C4A219C0BEE004C1300 /* LYEssenceCommentController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -246,6 +254,8 @@
 				BAA55C3521956A44004C1300 /* LYEssenceVideo.m */,
 				BAA55C40219BC6F3004C1300 /* LYEssenceBottomVIew.h */,
 				BAA55C41219BC6F3004C1300 /* LYEssenceBottomVIew.m */,
+				BAA55C4C219C11FA004C1300 /* LYEssenceCommentCell.h */,
+				BAA55C4D219C11FA004C1300 /* LYEssenceCommentCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -595,6 +605,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA2358E321897C910048503D /* LYRecommendTag.m in Sources */,
+				BAA55C4B219C0BEE004C1300 /* LYEssenceCommentController.m in Sources */,
 				BAA55C42219BC6F3004C1300 /* LYEssenceBottomVIew.m in Sources */,
 				BAA55C3C219A795D004C1300 /* LYPublishView.m in Sources */,
 				BA23589621883FCF0048503D /* UIImage+extension.m in Sources */,
@@ -623,6 +634,7 @@
 				BAA55C3921957AA8004C1300 /* LYEssenceFullPictureController.m in Sources */,
 				BAFA5A33218FEB670029F58F /* LYRecommendFollowUsersCell.m in Sources */,
 				BAFA5A3C219177DF0029F58F /* LYPlaveHoderTextField.m in Sources */,
+				BAA55C4E219C11FA004C1300 /* LYEssenceCommentCell.m in Sources */,
 				BA2358DA21884CB80048503D /* UIBarButtonItem+extension.m in Sources */,
 				BA2358D7218849E50048503D /* LYMeViewController.m in Sources */,
 				BAFA5A5D219416FA0029F58F /* LYEssenceTopicController.m in Sources */,

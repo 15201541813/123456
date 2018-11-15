@@ -38,6 +38,11 @@ static CGFloat backBtnSize = 16;
     [self layoutSubviews];
 }
 
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
+}
+
 #pragma mark - registerClick点击注册账号
 - (void)registerClick
 {

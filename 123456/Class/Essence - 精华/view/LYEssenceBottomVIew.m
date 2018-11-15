@@ -46,7 +46,7 @@
 - (void)addVerticaiLine
 {
     CGFloat width = self.width / self.btns.count;
-    for (NSInteger i = 0; i < self.btns.count; i++) {
+    for (NSInteger i = 1; i < self.btns.count; i++) {
         UIImageView *line = [[UIImageView alloc] init];
         [self addSubview:line];
         line.image = [UIImage imageNamed:@"cell-button-line"];
